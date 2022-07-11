@@ -35,4 +35,10 @@ public class DepartmentController {
         departmentService.deleteDepartmentById(departmentId);
         return "¡Departamento eliminado con exito!";
     }
-}
+
+    @PutMapping("/departments/{id}")
+    public Department updateDepartment(@PathVariable("id") Long departmentId, @RequestBody Department department){
+        return departmentService.updateDepartment(departmentId, department);
+    }
+
+} // close class
