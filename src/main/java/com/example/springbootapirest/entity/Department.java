@@ -18,6 +18,13 @@ public class Department {
     public Department() {
     }
 
+    public Department(Long departmentId, String departmentName, String departmentAddress, String departmentCode) {
+        this.departmentId = departmentId;
+        this.departmentName = departmentName;
+        this.departmentAddress = departmentAddress;
+        this.departmentCode = departmentCode;
+    }
+
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer("Department{");
