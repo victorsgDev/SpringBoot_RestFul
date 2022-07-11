@@ -3,12 +3,10 @@ package com.example.springbootapirest.controller;
 import com.example.springbootapirest.entity.Department;
 import com.example.springbootapirest.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 
 @RestController
@@ -27,4 +25,8 @@ public class DepartmentController {
         return departmentService.fetchDepartmentList();
     }
 
+    @GetMapping("/departments/{id}")
+    public Department fetchDepartmentById(@PathVariable("id") Long departmentId){
+        return departmentService.fetchDepartmentById(departmentId);
+    }
 }

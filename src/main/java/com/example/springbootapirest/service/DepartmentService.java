@@ -1,12 +1,14 @@
 package com.example.springbootapirest.service;
 
 import com.example.springbootapirest.entity.Department;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface DepartmentService {
     Department saveDepartment(Department department);
 
     List<Department> fetchDepartmentList();
+
+    Department fetchDepartmentById(Long departmentId);
 }
