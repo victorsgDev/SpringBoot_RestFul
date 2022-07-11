@@ -1,4 +1,2 @@
-# SAVE API
-- saveDepartment method en Controller (@PostMapping()) ->
-  - Service -> 
-    - DepartmentRepository.save(department)
+# LOMBOK 
+- Data classes - sin necesidad de añadir getter / setters, constructors, toString...
