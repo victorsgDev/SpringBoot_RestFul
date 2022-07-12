@@ -21,6 +21,12 @@ spring:
 welcome:
   message: Bienvenido a mi SpringBootApiRestApplication
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 ---
 spring:
   profiles: qa
