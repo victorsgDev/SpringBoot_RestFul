@@ -1,2 +1,3 @@
-# LOMBOK 
-- Data classes - sin necesidad de añadir getter / setters, constructors, toString...
+# Unit Testing
+- @SpringBootTest
+- @DataJpaTest, EntityManager para no tocar db
